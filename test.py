@@ -1,23 +1,11 @@
-while True:
-    coins_input = input("How many coins do you have? ")
-    bills_input = input("How many bills do you have? ")
-    if coins_input.isdigit() and bills_input.isdigit():
-        coins = int(coins_input)
-        bills = int(bills_input)
-        break
-    else:
-        print("Invalid input. Please enter a valid number.")
-        continue
+import random
+import time
 
-
-print(coins)
-print(bills)
-
-
-myTotal = coins + bills
-
-match myTotal:
-    case n if n > 100:
-        print(f"Total is over 100: {myTotal}")
-    case n if n < 100:
-        print(f"Total is below 100: {myTotal}")
+num = random.randint(1, 100)
+print("You have asked for a random number between 1 and 100.")
+time.sleep(2)
+print("Standby...")
+time.sleep(2)
+print("...")
+time.sleep(1)
+print("Your number is:", num)
