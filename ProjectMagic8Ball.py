@@ -16,9 +16,16 @@ answers = [
     "Ask again later",
     "Better not tell you now",
     "My sources say no",
-    "Outlook not so good",
+    "Probably not",
     "Very doubtful",
 ]
 answer = answers[random_number - 1]
 
 print(f"Magic 8-Ball's answer: {answer}")
+
+
+wouldyou = input(f"{name}, would you like to ask another question? (yes/no): ")
+
+if wouldyou.lower() == "yes":
+    input("Enter your question: ")
+    print(f"Magic 8-Ball's answer: {answer}")
