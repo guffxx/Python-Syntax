@@ -1,10 +1,10 @@
 import random
 import time
 
+num = random.randint(1, 100)
+name = input("Enter your name: ")
+time = time.strftime("%H:%M:%S")
 
-def random_num_gen():
-    return random.randint(1, 100)
 
-
-num = random_num_gen()
-print("Your number is:", num)
+print(f"Hello, {name}! Your number is: {num}")
+print(f"Current time is: {time}")
